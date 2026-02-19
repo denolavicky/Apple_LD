@@ -1,8 +1,11 @@
-body {
-  font-family: $font-sans;
-  font-size: $font-size-base;
-  color: $text-dark;
-  background-color: $bg-white;
+@use 'variables'; // Importing the variables file to use the defined variables in this stylesheet
+
+@use 'nav'; // Importing the nav file to use the styles defined for the navigation bar
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: variables.$font-sans; // Using the font family defined in the variables file
+  background-color: variables.$primary-white; // Setting the background color to white using the variable
 }
