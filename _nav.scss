@@ -1,5 +1,55 @@
 @use 'variables'; // Importing the variables file to use the defined variables in this stylesheet
 
-.nav-bar {
+
+header {
+  background: variables.$primary-black;
+  position: sticky;
+  top: 0;
+  opacity: 85%;
+
+}
+
+.navbar {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 10em;
+  justify-content: center;
+  flex: 1;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: variables.$primary-white;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.icon {
+  fill: #6e6e73;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  fill: white;
+}
+
+.icon2{
+  fill: #6e6e73;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon2:hover {
+  color: rgb(236, 232, 232);
 }
