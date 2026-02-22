@@ -1,25 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background: #000000;
   position: sticky;
   top: 0;
-  opacity: 85%;
+  opacity: 1;
 }
 
 .navbar {
   width: 100%;
-  height: 6vh;
+  height: 45px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 10px;
 }
 
-.navbar ul {
+.nav--List {
   display: flex;
   list-style: none;
-  gap: 10em;
-  justify-content: center;
-  flex: 1;
+  gap: 10.7em;
+  align-self: center;
+  padding-top: 8px;
 }
 
 .navbar ul li a {
@@ -36,7 +40,7 @@ header {
 }
 
 .icon:hover {
-  fill: white;
+  fill: rgb(221, 217, 217);
 }
 
 .icon2 {
@@ -46,9 +50,206 @@ header {
 }
 
 .icon2:hover {
-  color: rgb(236, 232, 232);
+  color: rgb(177, 172, 172);
 }
 
+.navContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.mac-drop {
+  position: relative;
+}
+
+.ipad-drop {
+  position: relative;
+}
+
+.iphone-drop {
+  position: relative;
+}
+
+.support-drop {
+  position: relative;
+}
+
+.where-drop {
+  position: relative;
+}
+
+.dropdown--mac {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #000000;
+  color: #6e6e73;
+  padding: 2em;
+  border-radius: 2px;
+  pointer-events: auto;
+}
+
+.dropdown--ipad {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #000000;
+  color: #6e6e73;
+  padding: 2em;
+  border-radius: 2px;
+  pointer-events: auto;
+}
+
+.dropdown--iphone {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #000000;
+  color: #6e6e73;
+  padding: 2em;
+  border-radius: 2px;
+  pointer-events: auto;
+}
+
+.dropdown--support {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #000000;
+  color: #6e6e73;
+  padding: 2em;
+  border-radius: 2px;
+  pointer-events: auto;
+}
+
+.dropdown--where {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #000000;
+  color: #6e6e73;
+  padding: 2em;
+  border-radius: 2px;
+  pointer-events: auto;
+}
+
+.mac-drop:hover .dropdown--mac {
+  display: block;
+}
+
+.ipad-drop:hover .dropdown--ipad {
+  display: block;
+}
+
+.iphone-drop:hover .dropdown--iphone {
+  display: block;
+}
+
+.support-drop:hover .dropdown--support {
+  display: block;
+}
+
+.where-drop:hover .dropdown--where {
+  display: block;
+}
+
+.dropdown--ipad li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--mac li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--ipad li:hover {
+  color: rgb(177, 172, 172);
+  cursor: pointer;
+}
+
+.dropdown--mac li:hover {
+  color: rgb(177, 172, 172);
+  cursor: pointer;
+}
+
+.dropdown--iphone li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--iphone li:hover {
+  color: rgb(177, 172, 172);
+  cursor: pointer;
+}
+
+.dropdown--support li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--support li:hover {
+  color: rgb(177, 172, 172);
+  cursor: pointer;
+}
+
+.dropdown--where li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--where li:hover {
+  color: rgb(177, 172, 172);
+  cursor: pointer;
+}
+
+.explore {
+  font-size: 9px;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar ul {
+    gap: 3em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    gap: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar ul {
+    gap: 1em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbar ul {
+    gap: 0.5em;
+  }
+}
 * {
   margin: 0;
   padding: 0;
