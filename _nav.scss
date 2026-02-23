@@ -39,6 +39,7 @@ header {
   fill: #6e6e73;
   transition: fill 0.3s ease;
   cursor: pointer;
+  font-size: 10px;
 }
 
 .icon:hover {
@@ -56,8 +57,7 @@ header {
 }
 
 .navContainer {
-  max-width: 1200px;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -87,9 +87,8 @@ header {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
   list-style: none;
-  width: max-content;
+  width: 100vw;
   background-color: variables.$primary-black;
   color: #6e6e73;
   padding: 2em;
@@ -101,9 +100,8 @@ header {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
   list-style: none;
-  width: max-content;
+  width: 100vw;
   background-color: variables.$primary-black;
   color: #6e6e73;
   padding: 2em;
@@ -115,9 +113,8 @@ header {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
   list-style: none;
-  width: max-content;
+  width: 100vw;
   background-color: variables.$primary-black;
   color: #6e6e73;
   padding: 2em;
@@ -125,13 +122,13 @@ header {
   pointer-events: auto;
 }
 
-.dropdown--support {
+.dropdown--support{
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   list-style: none;
-  width: max-content;
+  width: 100vw;
   background-color: variables.$primary-black;
   color: #6e6e73;
   padding: 2em;
@@ -145,12 +142,17 @@ header {
   top: 100%;
   left: 0;
   list-style: none;
-  width: max-content;
+  width:100vw;
   background-color: variables.$primary-black;
   color: #6e6e73;
   padding: 2em;
   border-radius: 2px;
   pointer-events: auto;
+}
+
+.dropdown-wrap {
+  display: flex;
+  gap: 4rem;
 }
 
 .mac-drop:hover .dropdown--mac {
@@ -225,6 +227,13 @@ header {
 
 .explore {
   font-size: 9px;
+}
+
+#header-title {
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 600;
+  margin: 0.5em 1.78em;
 }
 
 @media screen and (max-width: 990px) {
