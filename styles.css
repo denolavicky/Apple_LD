@@ -1,1 +1,48 @@
-/*# sourceMappingURL=styles.css.map */
+.iphone-section {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px;
+  gap: 30px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+
+img {
+    display: grid;
+    border: 50px;
+    border-radius: 50px;
+    padding-bottom: 10px;
+
+}
+.card,
+.card-black,
+.image-card,
+.ios,
+.env,
+.privacy {
+  position: relative;   
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.card img,
+.card-black img,
+.image-card img,
+.ios img,
+.env img,
+.privacy img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.text,
+.text-overlay {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: white;   
+  z-index: 2;
+}
