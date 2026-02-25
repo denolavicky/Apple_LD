@@ -1,29 +1,29 @@
-// COLORS
-// ==========================
+$font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+             "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// Primary
+$font-size-base: 17px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$space-sm: 8px;
+$space-md: 16px;
+
 $primary-black: #000000;
 $primary-white: #ffffff;
 
-// Text
-$text-dark: #1d1d1f;       // Main text color
-$text-gray: #6e6e73;       // Secondary text
-$text-light-gray: #f5f5f7; // Light text / subtle text
+$text-dark: #1d1d1f;
+$text-gray: #6e6e73;
 
-// Backgrounds
 $bg-white: #ffffff;
-$bg-light-gray: #f7f7f7;
+$bg-light-gray: #f5f5f7;
 
-// Accent / CTA
-$accent-blue: #0071e3;     // CTA buttons, links
-$accent-gray: #d2d2d7;     // Borders, subtle accents
-
-// BUTTONS
-// ==========================
+$accent-blue: #0071e3;
+$accent-gray: #d2d2d7;
 
 $button-bg: $accent-blue;
 $button-color: $primary-white;
 $button-padding-vertical: $space-sm;
 $button-padding-horizontal: $space-md;
-$button-radius: $border-radius-md;
-$button-font-weight: $font-weight-bold;
