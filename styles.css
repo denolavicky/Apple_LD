@@ -8,12 +8,11 @@ header {
   background: #000000;
   position: sticky;
   top: 0;
-  opacity: 1;
 }
 
 .navbar {
   width: 100%;
-  height: 45px;
+  height: 52px;
   display: flex;
   align-items: center;
 }
@@ -21,7 +20,7 @@ header {
 .nav--List {
   display: flex;
   list-style: none;
-  gap: 10.7em;
+  gap: 11em;
   align-self: center;
   padding-top: 8px;
 }
@@ -30,32 +29,33 @@ header {
   text-decoration: none;
   color: #6e6e79;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .icon {
-  fill: #6e6e73;
+  fill: #a4a4a4;
   transition: fill 0.3s ease;
   cursor: pointer;
   font-size: 10px;
 }
 
 .icon:hover {
-  fill: rgb(221, 217, 217);
+  fill: rgb(255, 255, 255);
 }
 
 .icon2 {
-  fill: #6e6e73;
+  fill: #a4a4a4;
   transition: color 0.3s ease;
   cursor: pointer;
 }
 
 .icon2:hover {
-  color: rgb(177, 172, 172);
+  color: rgb(255, 255, 255);
 }
 
 .navContainer {
-  width: 100vw;
+  width: -moz-max-content;
+  width: max-content;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -84,25 +84,25 @@ header {
 .dropdown--mac {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 1;
   list-style: none;
   width: 100vw;
   background-color: #000000;
   color: #6e6e73;
-  padding: 2em;
+  padding: 3.5em;
   border-radius: 2px;
-  pointer-events: auto;
+  pointer-events: fill;
 }
 
 .dropdown--ipad {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 1;
   list-style: none;
   width: 100vw;
   background-color: #000000;
   color: #6e6e73;
-  padding: 2em;
+  padding: 3.5em;
   border-radius: 2px;
   pointer-events: auto;
 }
@@ -110,12 +110,12 @@ header {
 .dropdown--iphone {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 1;
   list-style: none;
   width: 100vw;
   background-color: #000000;
   color: #6e6e73;
-  padding: 2em;
+  padding: 3.5em;
   border-radius: 2px;
   pointer-events: auto;
 }
@@ -123,13 +123,12 @@ header {
 .dropdown--support {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 1;
   list-style: none;
   width: 100vw;
   background-color: #000000;
   color: #6e6e73;
-  padding: 2em;
+  padding: 3.5em;
   border-radius: 2px;
   pointer-events: auto;
 }
@@ -137,13 +136,12 @@ header {
 .dropdown--where {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 1;
   list-style: none;
   width: 100vw;
   background-color: #000000;
   color: #6e6e73;
-  padding: 2em;
+  padding: 3.5em;
   border-radius: 2px;
   pointer-events: auto;
 }
@@ -184,12 +182,12 @@ header {
 }
 
 .dropdown--ipad li:hover {
-  color: rgb(177, 172, 172);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
 .dropdown--mac li:hover {
-  color: rgb(177, 172, 172);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -199,7 +197,7 @@ header {
 }
 
 .dropdown--iphone li:hover {
-  color: rgb(177, 172, 172);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -209,7 +207,7 @@ header {
 }
 
 .dropdown--support li:hover {
-  color: rgb(177, 172, 172);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -219,7 +217,7 @@ header {
 }
 
 .dropdown--where li:hover {
-  color: rgb(177, 172, 172);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -234,7 +232,7 @@ header {
   margin: 0.5em 1.78em;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
   .navbar ul {
     gap: 3em;
   }
