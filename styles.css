@@ -5,14 +5,16 @@
 }
 
 header {
-  background: #000000;
+  background: rgba(0, 0, 0, 0.9176470588);
   position: sticky;
   top: 0;
+  position: relative;
+  z-index: 1000;
 }
 
 .navbar {
   width: 100%;
-  height: 52px;
+  height: 50px;
   display: flex;
   align-items: center;
 }
@@ -22,14 +24,13 @@ header {
   list-style: none;
   gap: 11em;
   align-self: center;
-  padding-top: 8px;
 }
 
 .navbar ul li a {
   text-decoration: none;
-  color: #6e6e79;
-  font-size: 13px;
-  font-weight: 300;
+  color: #bdbdc5;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .icon {
@@ -61,94 +62,70 @@ header {
   justify-content: center;
 }
 
-.mac-drop {
-  position: relative;
-}
-
-.ipad-drop {
-  position: relative;
-}
-
-.iphone-drop {
-  position: relative;
-}
-
-.support-drop {
-  position: relative;
-}
-
-.where-drop {
-  position: relative;
-}
-
 .dropdown--mac {
   display: none;
   position: absolute;
-  top: 1;
-  list-style: none;
-  width: 100vw;
-  background-color: #000000;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
   color: #6e6e73;
-  padding: 3.5em;
-  border-radius: 2px;
-  pointer-events: fill;
+  padding: 3em 0;
+  font-size: 17px;
 }
 
 .dropdown--ipad {
   display: none;
   position: absolute;
-  top: 1;
-  list-style: none;
-  width: 100vw;
-  background-color: #000000;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
   color: #6e6e73;
-  padding: 3.5em;
-  border-radius: 2px;
-  pointer-events: auto;
+  padding: 3.5em 0;
+  font-size: 17px;
 }
 
 .dropdown--iphone {
   display: none;
   position: absolute;
-  top: 1;
-  list-style: none;
-  width: 100vw;
-  background-color: #000000;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
   color: #6e6e73;
-  padding: 3.5em;
-  border-radius: 2px;
-  pointer-events: auto;
+  padding: 3.5em 0;
+  font-size: 17px;
 }
 
 .dropdown--support {
   display: none;
   position: absolute;
-  top: 1;
-  list-style: none;
-  width: 100vw;
-  background-color: #000000;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
   color: #6e6e73;
-  padding: 3.5em;
-  border-radius: 2px;
-  pointer-events: auto;
+  padding: 3.5em 0;
+  font-size: 17px;
 }
 
 .dropdown--where {
   display: none;
   position: absolute;
-  top: 1;
-  list-style: none;
-  width: 100vw;
-  background-color: #000000;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
   color: #6e6e73;
-  padding: 3.5em;
-  border-radius: 2px;
-  pointer-events: auto;
+  padding: 3.5em 0;
+  font-size: 17px;
 }
 
 .dropdown-wrap {
+  max-width: 980px;
+  margin: 0 auto;
   display: flex;
-  gap: 4rem;
 }
 
 .mac-drop:hover .dropdown--mac {
