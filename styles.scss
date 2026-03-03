@@ -10,3 +10,13 @@ body {
   padding: 0;
 }
 
+@use 'variables'; // Importing the variables file to use the defined variables in this stylesheet
+
+@use 'nav'; // Importing the nav file to use the styles defined for the navigation bar
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: variables.$font-sans; // Using the font family defined in the variables file
+}
